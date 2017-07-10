@@ -1,0 +1,25 @@
+/**index.wxss**/
+.swiper_box{
+    height: 350rpx;
+    width: 100%;
+    text-align: center;
+}
+.slide-image{
+    width: 100%;
+    height: 100%;
+}
+.wx-swiper-dot-horizontal{
+    transition: 0.3s all ease !important;
+}
+.wx-swiper-dot{
+    background: #ffffff !important;
+    width: 16rpx !important;
+    height: 16rpx !important;
+    transition: 0.3s all ease !important;
+}
+.wx-swiper-dot-active{
+    background: #f60 !important;
+    width: 24rpx !important;
+    height: 16rpx !important;
+    border-radius: 8rpx  !important; 
+}

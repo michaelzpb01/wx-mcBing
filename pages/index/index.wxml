@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <div>1111111</div>
+  <picker bindchange="bindPickerChange" value="{{areaIndex}}" range="{{area}}">  
+    <view class="picker">  
+      当前选择：{{area[areaIndex]}}  
+    </view>  
+</picker>  
+</view>
