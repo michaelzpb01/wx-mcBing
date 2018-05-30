@@ -1,5 +1,7 @@
 <!--index.wxml-->
 <view class="container">
+    <view class='question'>我们日常说一个人心口不一时，都是在批评他们的虚伪，其实心口不一不完全是一种缺点，有很多人不愿意将自己的真实想法说出来，因为社会中很多人都会互相心存芥蒂，而有时也会临时改变主意才会导致心口不一。那么，你心口不一严重吗？测试一下就知道答案了，下面我们来做一个性格测试吧。</view>
+    <!--  
   <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgUrls}}">
       <swiper-item>
@@ -7,10 +9,30 @@
       </swiper-item>
     </block>
   </swiper>
-  <div>1111111</div>
+  <view>1111111</view>
   <picker bindchange="bindPickerChange" value="{{areaIndex}}" range="{{area}}">  
     <view class="picker">  
       当前选择：{{area[areaIndex]}}  
     </view>  
-</picker>  
+</picker>  -->
+    <view class="question-title">题目：{{question.questionName}}</view>
+    <view class="minu">
+        <button 
+        type="default" 
+        hover-class="other-button-hover" 
+        bindtap="optionSel" 
+        data-to="{{question.option[0].to}}">A. {{question.option[0].text}} </button>
+
+        <button 
+        type="primary" 
+        bindtap="optionSel" 
+        end-state="true" 
+        data-to="{{question.option[1].to}}">B. {{question.option[1].text}} </button>
+
+        <button 
+        type="warn" 
+        bindtap="optionSel" 
+        end-state="true"
+        data-to="{{question.option[2].to}}">C. {{question.option[2].text}} </button>
+    </view>
 </view>

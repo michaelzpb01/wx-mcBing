@@ -1,4 +1,7 @@
 /**index.wxss**/
+.container {
+    text-align: center;
+}
 .swiper_box{
     height: 350rpx;
     width: 100%;
@@ -22,4 +25,20 @@
     width: 24rpx !important;
     height: 16rpx !important;
     border-radius: 8rpx  !important; 
+}
+.minu{
+    margin-top: 20px;
+}
+button{
+    width: 95%;
+    margin: 0 auto 10px;
+    display: inline-block;
+}
+.question{
+    padding: 0 10px;
+    font-size: 14px;
+    color: #333333;
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
